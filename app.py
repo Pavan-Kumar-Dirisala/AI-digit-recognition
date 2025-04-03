@@ -2,11 +2,17 @@ import streamlit as st
 import onnxruntime as ort
 import numpy as np
 from PIL import Image
+from huggingface_hub import hf_hub_download
 from streamlit_drawable_canvas import st_canvas
 import time
 
 # Load ONNX Model
-onnx_model = "digit_recognizer_2.onnx"
+# onnx_model = "digit_recognizer_2.onnx"
+repo_id = "PavanKumarD/digit-recognizer"
+model_filename = "digit_recognizer_2.onnx"  # Make sure this matches the filename in your repo
+
+# Download ONNX model from Hugging Face
+onnx_model = hf_hub_download(repo_id=repo_id, filename=model_filename)
 session = ort.InferenceSession(onnx_model, providers=["CPUExecutionProvider"])
 
 # App configuration
