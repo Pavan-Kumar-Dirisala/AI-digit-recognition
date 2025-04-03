@@ -55,7 +55,7 @@ streamlit run app.py
 
 ## 🌎 Live Demo  
 
-🔗 **Streamlit App:** [Your Live Demo Link](#)  
+🔗 **Streamlit App:** [Click here for demo](https://ai-digit-recognition-mzzyefjfittj6xypadrrmz.streamlit.app/)  
 
 ---
 
