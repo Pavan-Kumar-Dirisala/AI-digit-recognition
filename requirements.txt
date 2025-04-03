@@ -5,3 +5,4 @@ numpy
 Pillow
 huggingface_hub
 onnxruntime
+streamlit-drawable-canvas
